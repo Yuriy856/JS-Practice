@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Popup</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li><a class="menu__link" href="#">Головна</a></li>
+                    <li><a class="menu__link" href="#">Форум</a></li>
+                    <li><a class="menu__link" href="#">Стрічка</a></li>
+                    <li><a class="menu__link singIn-link" href="#">Вхід</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="converter__degrees">
+                <h2 class="converter__title">Конвертер Градусів по Фарингейту в Градуси Цельсію</h2>
+                <div class="converter__content">
+                    <label class="converter__label" for="">Введіть Градуси по Фарингейту: </label>
+                    <input class="converter__input" type="text" placeholder="">
+                </div>
+                <div class="converter__result">
+                    <span class="converter__result-text" >Градусів Цельсію: </span>
+                    <span class="conv__resulr">0</span>
+                    <span class="conv__temperatur">C</span>
+                </div>
+                <button class="switch">
+                    <div class="switch__circle"></div>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <div class="popup__active">
+        <div class="popup">
+            <div class="popup__blok">
+                <div class="popup__close">
+                    <span>+</span>
+                </div>
+                <form action="post" class="popup__form">
+                    <h2 class="form__title">Здійсніть Вхід</h2>
+                    <div class="form__log">
+                        <div class="form__label">
+                            <label for="">Логін:</label>
+                            <label for="">Пароль:</label>
+                        </div>
+                        <div class="form__input">
+                            <input type="text" placeholder="логін">
+                            <input type="text" placeholder="пароль">
+                        </div>
+                    </div>
+                    <span class="form__reg">
+                        або
+                        <a href="#">реєстрація</a>
+                    </span>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script type="module" src="script.js"></script>
+    <script type="module" src="add.js"></script>
+</body>
+
+</html>
